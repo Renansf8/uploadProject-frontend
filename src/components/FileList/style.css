@@ -1,0 +1,161 @@
+.deleteTooltip {
+  position: relative;
+}
+
+.deleteTooltip .deleteTooltipText {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -47px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.deleteTooltip .deleteTooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.deleteTooltip:hover .deleteTooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.urlTooltip {
+  position: relative;
+}
+
+.urlTooltip .urlTooltipText {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 12px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  margin-left: -38px;
+
+  opacity: 0;
+  transition: opacity 0.3s
+}
+
+.urlTooltip .urlTooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.urlTooltip:hover .urlTooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.successTooltip {
+  position: relative;
+}
+
+.successTooltip .successTooltipText {
+  visibility: hidden;
+  width: 110px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 12px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -44px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.successTooltip .successTooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.successTooltip:hover .successTooltipText {
+  opacity: 1;
+  visibility: visible;
+}
+
+.errorTooltip {
+  position: relative;
+}
+
+.errorTooltip .errorTooltipText {
+  visibility: hidden;
+  width: 110px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 12px;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  margin-left: -44px;
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.errorTooltip .errorTooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left:-5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.errorTooltip:hover .errorTooltipText {
+  opacity: 1;
+  visibility: visible;
+}

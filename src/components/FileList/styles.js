@@ -33,6 +33,7 @@ export const FileInfo = styled.div`
     margin-top: 5px;
     display: flex;
     justify-content: center;
+    position: relative;
   }
 
   button {
@@ -40,7 +41,9 @@ export const FileInfo = styled.div`
     background: transparent;
     color: #A52A2A;
     margin-left: 5px;
-    cursor: pointer
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
   }
 `;
 
@@ -54,3 +57,4 @@ export const Preview = styled.div`
   background-position: 50% 50%;
   margin-right: 10px;
 `;
+
