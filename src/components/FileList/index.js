@@ -48,11 +48,11 @@ const FileList = ({files, onDelete}) => (
           </div>
           <div>
             <div class ="successTooltip">
-              <span class="successTooltipText">successo ao enviar imagem</span>
+              <span class="successTooltipText">sucesso ao enviar imagem</span>
               {uploadedFile.uploaded && (<MdCheckCircle size={24} color="#32CD32"/>)}
             </div>
             <div class="errorTooltip">
-              <span class="errorTooltipText">Erro ao enviar imagem!</span>
+              <span class="errorTooltipText">erro ao enviar imagem!</span>
               {uploadedFile.error && (<MdError size={24} color="#A52A2A"/>)}
             </div>
           </div>
