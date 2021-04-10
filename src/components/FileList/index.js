@@ -66,4 +66,3 @@ const FileList = ({files, onDelete}) => (
 
 export default FileList;
 
-//FIZ UM MAP PRA MOSTRAR AS INFORMAÇÕES NA TELA PRA CADA UPLOAD FEITO

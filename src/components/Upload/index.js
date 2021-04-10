@@ -35,4 +35,3 @@ export default class Upload extends Component {
   }
 }
 
-// {...getInputProps()} -> Vou passar para o meu input que vai ter o upload

@@ -43,12 +43,10 @@ class App extends Component {
       url: null,
     }))
 
-    //ISSO É PARA ANEXAR AS NOVAS INFORMAÇÕES COM AS EXISTENTES
     this.setState({
       uploadedFiles: this.state.uploadedFiles.concat(uploadedFiles)
     });
 
-    //PARA CADA 'uploadedFiles' vou chamar a função 'processUpload'
     uploadedFiles.forEach(this.processUpload)
   };
 
@@ -61,7 +59,6 @@ class App extends Component {
   };
 
   processUpload = (uploadedFile) => {
-    //COMO SE TIVESSE DANDO UM SUBMIT DE UM HTML DENTRO DO JS
     const data = new FormData();
 
     data.append('file', uploadedFile.file, uploadedFile.name);
@@ -121,4 +118,3 @@ class App extends Component {
 
 export default App;
 
-// const data = new FormData(); ->
